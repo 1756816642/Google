@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
@@ -11,5 +10,6 @@ public class RestaurantMenu {
 
     public RestaurantMenu() {
         menuItems = new HashMap<String, Integer>();
+        restaurantTitle = "default";
     }
 }

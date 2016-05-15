@@ -18,6 +18,9 @@ public class HelloWorld {
         for (String item : menu1.menuItems.keySet()) {
             System.out.println(item);
         }
+
+        Restaurant r = new Restaurant();
+        System.out.println(r.menu.restaurantTitle);
     }
 
 }
