@@ -48,6 +48,12 @@ public class HelloWorld {
             }
         }
         System.out.println("Restaurant ABC's rating is: " + abcRating.rating.restaurantRating);
+
+
+        // Animals
+        Animals dog1 = new Animals();
+        dog1.dog = "wapple";
+        System.out.println(dog1.dog);
     }
 
 }
