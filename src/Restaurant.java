@@ -3,10 +3,10 @@
  */
 public class Restaurant {
     RestaurantMenu menu;
-    RestaurantMenu rating;
+    RestaurantRating rating;
 
     public Restaurant() {
         menu = new RestaurantMenu();
-        rating = new RestaurantMenu();
+        rating = new RestaurantRating();
     }
 }
