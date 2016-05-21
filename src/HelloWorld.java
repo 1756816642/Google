@@ -1,3 +1,6 @@
+import animals.Cat;
+import animals.Dog;
+
 import java.util.HashMap;
 
 /**
@@ -51,9 +54,18 @@ public class HelloWorld {
 
 
         // Animals
-        Animals dog1 = new Animals();
-        dog1.dog = "wapple";
-        System.out.println(dog1.dog);
+        Dog dog1 = new Dog();
+        String dogName = dog1.name;
+        dog1.name = "wapple";
+        System.out.println(dog1.name);
+
+        Cat cat1 = new Cat();
+        cat1.name = "momo";
+        System.out.println(cat1.name);
+
+        Cat cat2 = new Cat();
+        cat2.name = "pickles";
+        System.out.println(cat2.name);
     }
 
 }
