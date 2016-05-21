@@ -53,19 +53,33 @@ public class HelloWorld {
         System.out.println("Restaurant ABC's rating is: " + abcRating.rating.restaurantRating);
 
 
-        // Animals
-        Dog dog1 = new Dog();
-        String dogName = dog1.name;
-        dog1.name = "wapple";
-        System.out.println(dog1.name);
+//        // Animals
+//        Dog dog1 = new Dog();
+//        String dogName = dog1.name;
+//        dog1.name = "wapple";
+//        System.out.println(dog1.name);
+//
+//        Cat cat1 = new Cat();
+//        cat1.name = "momo";
+//        System.out.println(cat1.name);
+//
+//        Cat cat2 = new Cat();
+//        cat2.name = "pickles";
+//        System.out.println(cat2.name);
 
-        Cat cat1 = new Cat();
-        cat1.name = "momo";
-        System.out.println(cat1.name);
+        Dog[] dogs = new Dog[4];
+        dogs[0] = new Dog("wapple", 2);
+        dogs[1] = new Dog("momo", 3);
+        dogs[2] = new Dog("appa", 5);
+        dogs[3] = new Dog("mochi");
 
-        Cat cat2 = new Cat();
-        cat2.name = "pickles";
-        System.out.println(cat2.name);
+        for (int i=0; i<dogs.length; i++) {
+            System.out.println(dogs[i].name);
+            System.out.println(dogs[i].age);
+        }
+
+        Dog dogZero = dogs[0];
+        dogZero.name = "wapple";
     }
 
 }

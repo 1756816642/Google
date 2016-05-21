@@ -8,9 +8,13 @@ public class Dog {
     public Integer age;
     public DogBreeds breed;
 
-    public Dog() {
-        name = "doggy";
-        age = 0;
+    public Dog(String dogName, Integer dogAge) {
+        name = dogName;
+        age = dogAge;
         breed = DogBreeds.GermanShepard;
+    }
+
+    public Dog(String dogName) {
+        this(dogName, 0);
     }
 }
