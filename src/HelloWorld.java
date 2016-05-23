@@ -1,5 +1,7 @@
 import animals.Cat;
 import animals.Dog;
+import apple.Macbook;
+import sun.plugin2.main.client.MacOSXKeyHandler;
 
 import java.util.HashMap;
 
@@ -77,9 +79,14 @@ public class HelloWorld {
             System.out.println(dogs[i].name);
             System.out.println(dogs[i].age);
         }
-
         Dog dogZero = dogs[0];
         dogZero.name = "wapple";
+
+        // Apple
+        Macbook jacobMac = new Macbook(2);
+        Macbook sofiaMac = new Macbook(2);
+        System.out.println(jacobMac.cost + sofiaMac.cost);
+
     }
 
 }
