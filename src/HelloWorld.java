@@ -1,5 +1,7 @@
 import animals.Cat;
 import animals.Dog;
+import apple.AppleStore;
+import apple.Ipad;
 import apple.Macbook;
 
 import java.util.HashMap;
@@ -81,11 +83,24 @@ public class HelloWorld {
         Dog dogZero = dogs[0];
         dogZero.name = "wapple";
 
-        // Apple
+        // Apple macbook
         Macbook jacobMac = new Macbook(2);
         Macbook sofiaMac = new Macbook(2);
         System.out.println(jacobMac.cost() + sofiaMac.cost());
 
+        // Apple ipad
+        Ipad jacobIpad = new Ipad(1);
+        Ipad sofiaIpad = new Ipad(1);
+        System.out.println(jacobIpad.cost() + sofiaIpad.cost());
+
+        // Apple applestore
+        AppleStore total = new AppleStore();
+        total.addItem(jacobMac);
+        total.addItem(sofiaMac);
+        total.addItem(jacobIpad);
+        total.addItem(sofiaIpad);
+
+        System.out.println(total.totalCost());
     }
 
 }
