@@ -8,6 +8,7 @@ import java.util.ArrayList;
 public class ShoppingCart {
     ArrayList<Macbook> macbooks = new ArrayList<Macbook>();
     ArrayList<Ipad> ipads = new ArrayList<Ipad>();
+    ArrayList<Iphone> iphones = new ArrayList<Iphone>();
 
 
     public void addItem(Macbook macbook) {
@@ -18,6 +19,10 @@ public class ShoppingCart {
         ipads.add(ipad);
     }
 
+    public void addItem(Iphone iphone) {
+        iphones.add(iphone);
+    }
+
     public Integer totalCost() {
         Integer totalCost = 0;
         for (Macbook macbook : macbooks) {
@@ -26,8 +31,9 @@ public class ShoppingCart {
         for (Ipad ipad : ipads) {
             totalCost = totalCost + ipad.cost();
         }
+        for (Iphone iphone : iphones) {
+            totalCost = totalCost + iphone.cost();
+        }
         return totalCost;
     }
-
-
 }

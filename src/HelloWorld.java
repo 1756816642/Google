@@ -1,8 +1,5 @@
 import animals.Dog;
-import apple.AppleStore;
-import apple.ShoppingCart;
-import apple.Ipad;
-import apple.Macbook;
+import apple.*;
 
 /**
  * Created by sofia on 5/14/16.
@@ -91,12 +88,19 @@ public class HelloWorld {
         Ipad sofiaIpad = new Ipad(1);
         System.out.println(jacobIpad.cost() + sofiaIpad.cost());
 
+        // Apple iphone
+        Iphone jacobIphone = new Iphone(2);
+        Iphone sofiaIphone = new Iphone(2);
+        System.out.println(jacobIphone.cost() + sofiaIphone.cost());
+
         // Apple applestore
         ShoppingCart total = new ShoppingCart();
         total.addItem(jacobMac);
         total.addItem(sofiaMac);
         total.addItem(jacobIpad);
         total.addItem(sofiaIpad);
+        total.addItem(jacobIphone);
+        total.addItem(sofiaIphone);
 
         AppleStore store = new AppleStore();
         store.items = total;

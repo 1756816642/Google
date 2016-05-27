@@ -13,11 +13,6 @@ public class AppleStore {
     }
 
     public ArrayList<String> purchaseIthings() {
-
+        return null;
     }
-
-    public void purchaseIthings() {
-
-    }
-
 }
