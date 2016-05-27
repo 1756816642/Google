@@ -81,20 +81,21 @@ public class HelloWorld {
         // Apple macbook
         Macbook jacobMac = new Macbook(2);
         Macbook sofiaMac = new Macbook(2);
-        System.out.println(jacobMac.cost() + sofiaMac.cost());
+        System.out.println("Total macbook cost: " + (jacobMac.cost() + sofiaMac.cost()));
 
         // Apple ipad
-        Ipad jacobIpad = new Ipad(1);
-        Ipad sofiaIpad = new Ipad(1);
-        System.out.println(jacobIpad.cost() + sofiaIpad.cost());
+        Ipad jacobIpad = new Ipad(1, "pro");
+        Ipad sofiaIpad = new Ipad(1, "mini");
+        System.out.println("Total ipad cost: " + (jacobIpad.cost() + sofiaIpad.cost()));
 
         // Apple iphone
         Iphone jacobIphone = new Iphone(2);
         Iphone sofiaIphone = new Iphone(2);
-        System.out.println(jacobIphone.cost() + sofiaIphone.cost());
+        System.out.println("Total iphone cost: " + (jacobIphone.cost() + sofiaIphone.cost()));
 
         // Apple imac
         Imac jsImac = new Imac(1);
+        System.out.println("Total imac cost: " + jsImac.cost());
 
         // Apple applestore
         ShoppingCart total = new ShoppingCart();
@@ -109,7 +110,7 @@ public class HelloWorld {
         AppleStore store = new AppleStore();
         store.items = total;
 
-        System.out.println("Total cost of iThings: " + total.totalCost());
+        System.out.println("Total iThings cost: " + total.totalCost());
     }
 
 }
