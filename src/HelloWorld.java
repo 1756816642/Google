@@ -1,10 +1,8 @@
-import animals.Cat;
 import animals.Dog;
 import apple.AppleStore;
+import apple.ShoppingCart;
 import apple.Ipad;
 import apple.Macbook;
-
-import java.util.HashMap;
 
 /**
  * Created by sofia on 5/14/16.
@@ -94,11 +92,14 @@ public class HelloWorld {
         System.out.println(jacobIpad.cost() + sofiaIpad.cost());
 
         // Apple applestore
-        AppleStore total = new AppleStore();
+        ShoppingCart total = new ShoppingCart();
         total.addItem(jacobMac);
         total.addItem(sofiaMac);
         total.addItem(jacobIpad);
         total.addItem(sofiaIpad);
+
+        AppleStore store = new AppleStore();
+        store.items = total;
 
         System.out.println(total.totalCost());
     }
