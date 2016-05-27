@@ -89,8 +89,8 @@ public class HelloWorld {
         System.out.println("Total ipad cost: " + (jacobIpad.cost() + sofiaIpad.cost()));
 
         // Apple iphone
-        Iphone jacobIphone = new Iphone(2);
-        Iphone sofiaIphone = new Iphone(2);
+        Iphone jacobIphone = new Iphone(3, "5");
+        Iphone sofiaIphone = new Iphone(1, "6");
         System.out.println("Total iphone cost: " + (jacobIphone.cost() + sofiaIphone.cost()));
 
         // Apple imac
