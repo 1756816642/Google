@@ -5,13 +5,20 @@ package apple;
  */
 public class Macbook {
     private Integer quantity;
+    private String model;
 
-    public Macbook(Integer quantity) {
+    public Macbook(Integer quantity, String model) {
         this.quantity = quantity;
+        this.model = model;
     }
 
     public Integer cost() {
-        Integer cost = this.quantity * 2000;
+        Integer cost = 0;
+        if (this.model == "pro") {
+            cost = cost + (this.quantity * 2500);
+        } else if (this.model == "air") {
+            cost = cost + (this.quantity * 1600);
+        }
         return cost;
     }
 }

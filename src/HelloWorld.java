@@ -79,8 +79,8 @@ public class HelloWorld {
         dogZero.name = "wapple";
 
         // Apple macbook
-        Macbook jacobMac = new Macbook(2);
-        Macbook sofiaMac = new Macbook(2);
+        Macbook jacobMac = new Macbook(2, "pro");
+        Macbook sofiaMac = new Macbook(2, "air");
         System.out.println("Total macbook cost: " + (jacobMac.cost() + sofiaMac.cost()));
 
         // Apple ipad
