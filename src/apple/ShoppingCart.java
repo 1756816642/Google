@@ -9,6 +9,7 @@ public class ShoppingCart {
     ArrayList<Macbook> macbooks = new ArrayList<Macbook>();
     ArrayList<Ipad> ipads = new ArrayList<Ipad>();
     ArrayList<Iphone> iphones = new ArrayList<Iphone>();
+    ArrayList<Imac> imacs = new ArrayList<Imac>();
 
 
     public void addItem(Macbook macbook) {
@@ -23,6 +24,10 @@ public class ShoppingCart {
         iphones.add(iphone);
     }
 
+    public void addItem(Imac imac) {
+        imacs.add(imac);
+    }
+
     public Integer totalCost() {
         Integer totalCost = 0;
         for (Macbook macbook : macbooks) {
@@ -33,6 +38,9 @@ public class ShoppingCart {
         }
         for (Iphone iphone : iphones) {
             totalCost = totalCost + iphone.cost();
+        }
+        for (Imac imac : imacs) {
+            totalCost = totalCost + imac.cost();
         }
         return totalCost;
     }

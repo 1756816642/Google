@@ -93,6 +93,9 @@ public class HelloWorld {
         Iphone sofiaIphone = new Iphone(2);
         System.out.println(jacobIphone.cost() + sofiaIphone.cost());
 
+        // Apple imac
+        Imac jsImac = new Imac(1);
+
         // Apple applestore
         ShoppingCart total = new ShoppingCart();
         total.addItem(jacobMac);
@@ -101,11 +104,12 @@ public class HelloWorld {
         total.addItem(sofiaIpad);
         total.addItem(jacobIphone);
         total.addItem(sofiaIphone);
+        total.addItem(jsImac);
 
         AppleStore store = new AppleStore();
         store.items = total;
 
-        System.out.println(total.totalCost());
+        System.out.println("Total cost of iThings: " + total.totalCost());
     }
 
 }
