@@ -7,4 +7,5 @@ import java.util.HashMap;
  */
 public class Mammal {
     public String name;
+    public String type = "poo";
 }

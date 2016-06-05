@@ -123,10 +123,13 @@ public class HelloWorld {
         gorilla2.name = "mimi";
         Elephant elephant1 = new Elephant();
         elephant1.name = "dumbo";
+        elephant1.trunkLength = 20;
         Elephant elephant2 = new Elephant();
         elephant2.name = "flappy";
+        elephant2.trunkLength = 25;
         Elephant elephant3 = new Elephant();
         elephant3.name = "stompper";
+        elephant3.trunkLength = 30;
 
         Zoo zoo1 = new Zoo();
         zoo1.addAnimals(gorilla1);
@@ -137,7 +140,11 @@ public class HelloWorld {
         System.out.println(zoo1.mammals);
 
         for (Mammal animal : zoo1.mammals) {
-            System.out.println(animal.name);
+            if (animal.type.equals("elephant")) {
+                Elephant e = (Elephant) animal;
+                System.out.println(e.trunkLength);
+            }
+            System.out.println(animal.type);
         }
     }
 
