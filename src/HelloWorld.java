@@ -1,5 +1,9 @@
 import animals.Dog;
 import apple.*;
+import zoo.Elephant;
+import zoo.Gorilla;
+import zoo.Mammal;
+import zoo.Zoo;
 
 /**
  * Created by sofia on 5/14/16.
@@ -111,6 +115,35 @@ public class HelloWorld {
         store.items = total;
 
         System.out.println("Total iThings cost: " + total.totalCost());
+
+        // Zoo animals
+        Gorilla gorilla1 = new Gorilla();
+        gorilla1.name = "coco";
+        Gorilla gorilla2 = new Gorilla();
+        gorilla2.name = "mimi";
+        Elephant elephant1 = new Elephant();
+        elephant1.name = "dumbo";
+        Elephant elephant2 = new Elephant();
+        elephant2.name = "flappy";
+        Elephant elephant3 = new Elephant();
+        elephant3.name = "stompper";
+
+        Zoo zoo1 = new Zoo();
+        zoo1.addAnimals(gorilla1);
+        zoo1.addAnimals(gorilla2);
+        zoo1.addAnimals(elephant1);
+        zoo1.addAnimals(elephant2);
+        zoo1.addAnimals(elephant3);
+        System.out.println(zoo1.gorillas);
+        System.out.println(zoo1.elephants);
+
+        for (Gorilla gorilla : zoo1.gorillas) {
+            System.out.println(gorilla.name);
+        }
+
+        for (Elephant elephant : zoo1.elephants) {
+            System.out.println(elephant.name);
+        }
     }
 
 }
