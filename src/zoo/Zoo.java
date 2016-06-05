@@ -6,19 +6,13 @@ import java.util.ArrayList;
  * Created by sofia on 6/5/16.
  */
 public class Zoo {
-    public ArrayList<Gorilla> gorillas;
-    public ArrayList<Elephant> elephants;
+    public ArrayList<Mammal> mammals;
 
     public Zoo() {
-        gorillas = new ArrayList<Gorilla>();
-        elephants = new ArrayList<Elephant>();
+        mammals = new ArrayList<Mammal>();
     }
 
-    public void addAnimals(Gorilla gorilla) {
-        gorillas.add(gorilla);
-    }
-
-    public void addAnimals(Elephant elephant) {
-        elephants.add(elephant);
+    public void addAnimals(Mammal mammal) {
+        mammals.add(mammal);
     }
 }

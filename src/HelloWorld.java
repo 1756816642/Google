@@ -130,19 +130,14 @@ public class HelloWorld {
 
         Zoo zoo1 = new Zoo();
         zoo1.addAnimals(gorilla1);
-        zoo1.addAnimals(gorilla2);
         zoo1.addAnimals(elephant1);
+        zoo1.addAnimals(gorilla2);
         zoo1.addAnimals(elephant2);
         zoo1.addAnimals(elephant3);
-        System.out.println(zoo1.gorillas);
-        System.out.println(zoo1.elephants);
+        System.out.println(zoo1.mammals);
 
-        for (Gorilla gorilla : zoo1.gorillas) {
-            System.out.println(gorilla.name);
-        }
-
-        for (Elephant elephant : zoo1.elephants) {
-            System.out.println(elephant.name);
+        for (Mammal animal : zoo1.mammals) {
+            System.out.println(animal.name);
         }
     }
 
