@@ -1,7 +1,4 @@
 package zoo;
-
-import java.util.HashMap;
-
 /**
  * Created by sofia on 5/27/16.
  */
