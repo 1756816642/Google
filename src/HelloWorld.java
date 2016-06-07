@@ -114,6 +114,7 @@ public class HelloWorld {
         System.out.println("Total iThings cost: " + total.totalCost());
 
         // Zoo animals
+        // make each animal
         Gorilla gorilla1 = new Gorilla();
         gorilla1.name = "coco";
         Gorilla gorilla2 = new Gorilla();
@@ -127,7 +128,18 @@ public class HelloWorld {
         Elephant elephant3 = new Elephant();
         elephant3.name = "stompper";
         elephant3.trunkLength = 30;
+        Snake snake1 = new Snake();
+        snake1.name = "hisser";
+        Snake snake2 = new Snake();
+        snake2.name = "hissy";
+        Lizzard lizzard1 = new Lizzard();
+        lizzard1.name = "ralph";
+        Lizzard lizzard2 = new Lizzard();
+        lizzard2.name = "mary";
 
+
+
+        //add animals to zoo
         Zoo zoo1 = new Zoo();
         zoo1.addAnimals(gorilla1);
         zoo1.addAnimals(elephant1);
@@ -135,6 +147,11 @@ public class HelloWorld {
         zoo1.addAnimals(elephant2);
         zoo1.addAnimals(elephant3);
         System.out.println(zoo1.mammals);
+        zoo1.addAnimals(snake1);
+        zoo1.addAnimals(snake2);
+        zoo1.addAnimals(lizzard1);
+        zoo1.addAnimals(lizzard2);
+        System.out.println(zoo1.reptiles);
 
         for (Mammal animal : zoo1.mammals) {
             if (animal.type.equals("elephant")) {
@@ -145,6 +162,11 @@ public class HelloWorld {
             System.out.println("name: " + animal.name);
             System.out.println("------------");
         }
+
+        for (Reptile animal : zoo1.reptiles) {
+            System.out.println(animal.name);
+        }
+
     }
 
 }
