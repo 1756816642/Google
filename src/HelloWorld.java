@@ -130,14 +130,16 @@ public class HelloWorld {
         elephant3.trunkLength = 30;
         Snake snake1 = new Snake();
         snake1.name = "hisser";
+        snake1.length = 48;
         Snake snake2 = new Snake();
         snake2.name = "hissy";
+        snake2.length = 60;
         Lizzard lizzard1 = new Lizzard();
         lizzard1.name = "ralph";
+        lizzard1.tongueLength = 3;
         Lizzard lizzard2 = new Lizzard();
         lizzard2.name = "mary";
-
-
+        lizzard2.tongueLength = 2;
 
         //add animals to zoo
         Zoo zoo1 = new Zoo();
@@ -156,7 +158,7 @@ public class HelloWorld {
         for (Mammal animal : zoo1.mammals) {
             if (animal.type.equals("elephant")) {
                 Elephant e = (Elephant) animal;
-                System.out.println("trunk length: " + e.trunkLength);
+                System.out.println("trunk length: " + e.trunkLength + " inches");
             }
             System.out.println("animal type: " + animal.type);
             System.out.println("name: " + animal.name);
@@ -164,7 +166,16 @@ public class HelloWorld {
         }
 
         for (Reptile animal : zoo1.reptiles) {
-            System.out.println(animal.name);
+            if (animal.type.equals("snake")) {
+                Snake s = (Snake) animal;
+                System.out.println("length: " + s.length + " inches");
+            } else if (animal.type.equals("lizzard")) {
+                Lizzard l = (Lizzard) animal;
+                System.out.println("tongue length: " + l.tongueLength + " inches");
+            }
+            System.out.println("animal type: " + animal.type);
+            System.out.println("name: " + animal.name);
+            System.out.println("------------");
         }
 
     }

@@ -5,4 +5,5 @@ package zoo;
  */
 public class Reptile {
     public String name;
+    public String type = "scales";
 }
