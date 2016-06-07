@@ -1,9 +1,6 @@
 import animals.Dog;
 import apple.*;
-import zoo.Elephant;
-import zoo.Gorilla;
-import zoo.Mammal;
-import zoo.Zoo;
+import zoo.*;
 
 /**
  * Created by sofia on 5/14/16.
@@ -142,9 +139,11 @@ public class HelloWorld {
         for (Mammal animal : zoo1.mammals) {
             if (animal.type.equals("elephant")) {
                 Elephant e = (Elephant) animal;
-                System.out.println(e.trunkLength);
+                System.out.println("trunk length: " + e.trunkLength);
             }
-            System.out.println(animal.type);
+            System.out.println("animal type: " + animal.type);
+            System.out.println("name: " + animal.name);
+            System.out.println("------------");
         }
     }
 
