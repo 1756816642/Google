@@ -73,8 +73,10 @@ public class HelloWorld {
         dogs[3] = new Dog("mochi");
 
         for (int i=0; i<dogs.length; i++) {
-            System.out.println(dogs[i].name);
-            System.out.println(dogs[i].age);
+            System.out.println("dog #" + i);
+            System.out.println("dog name: " + dogs[i].name);
+            System.out.println("dog age: " + dogs[i].age);
+            System.out.println("------------");
         }
         Dog dogZero = dogs[0];
         dogZero.name = "wapple";
