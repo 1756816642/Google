@@ -4,5 +4,5 @@ package zoo;
  */
 public class Mammal {
     public String name;
-    public String type = "poo";
+    public String type = "mammy";
 }
