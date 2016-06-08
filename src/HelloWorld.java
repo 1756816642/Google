@@ -142,6 +142,14 @@ public class HelloWorld {
         Lizzard lizzard2 = new Lizzard();
         lizzard2.name = "mary";
         lizzard2.tongueLength = 2;
+        Dolphin dolphin1 = new Dolphin();
+        dolphin1.name = "flipper";
+        Dolphin dolphin2 = new Dolphin();
+        dolphin2.name = "flippy";
+        Pufferfish pufferfish1 = new Pufferfish();
+        pufferfish1.name = "puffy";
+        Goldfish goldfish1 = new Goldfish();
+        goldfish1.name = "golden";
 
         //add animals to zoo
         Zoo zoo1 = new Zoo();
@@ -156,6 +164,11 @@ public class HelloWorld {
         zoo1.addAnimals(lizzard1);
         zoo1.addAnimals(lizzard2);
         System.out.println(zoo1.reptiles);
+        zoo1.addAnimals(dolphin1);
+        zoo1.addAnimals(dolphin2);
+        zoo1.addAnimals(pufferfish1);
+        zoo1.addAnimals(goldfish1);
+        System.out.println(zoo1.aquaticAnimals);
 
         for (Mammal animal : zoo1.mammals) {
             if (animal.type.equals("elephant")) {
@@ -175,6 +188,12 @@ public class HelloWorld {
                 Lizzard l = (Lizzard) animal;
                 System.out.println("tongue length: " + l.tongueLength + " inches");
             }
+            System.out.println("animal type: " + animal.type);
+            System.out.println("name: " + animal.name);
+            System.out.println("------------");
+        }
+
+        for (AquaticAnimal animal : zoo1.aquaticAnimals) {
             System.out.println("animal type: " + animal.type);
             System.out.println("name: " + animal.name);
             System.out.println("------------");
