@@ -150,6 +150,12 @@ public class HelloWorld {
         pufferfish1.name = "puffy";
         Goldfish goldfish1 = new Goldfish();
         goldfish1.name = "golden";
+        Penguin penguin1 = new Penguin();
+        penguin1.name = "waddle";
+        Seal seal1 = new Seal();
+        seal1.name = "peanut";
+        Otter otter1 = new Otter();
+        otter1.name = "ottoman";
 
         //add animals to zoo
         Zoo zoo1 = new Zoo();
@@ -168,6 +174,9 @@ public class HelloWorld {
         zoo1.addAnimals(dolphin2);
         zoo1.addAnimals(pufferfish1);
         zoo1.addAnimals(goldfish1);
+        zoo1.addAnimals(penguin1);
+        zoo1.addAnimals(seal1);
+        zoo1.addAnimals(otter1);
         System.out.println(zoo1.aquaticAnimals);
 
         for (Mammal animal : zoo1.mammals) {
