@@ -1,5 +1,6 @@
 import animals.Dog;
 import apple.*;
+import movieLibrary.*;
 import zoo.*;
 
 /**
@@ -208,6 +209,64 @@ public class HelloWorld {
             System.out.println("------------");
         }
 
+        // Movies
+        // create movies first
+        ScienceFiction scienceFiction1 = new ScienceFiction();
+        scienceFiction1.title = "Jurassic World";
+        scienceFiction1.year = 2015;
+        ScienceFiction scienceFiction2 = new ScienceFiction();
+        scienceFiction2.title = "The Martian";
+        scienceFiction2.year = 2015;
+        Animation animation1 = new Animation();
+        animation1.title = "Minions";
+        animation1.year = 2015;
+        Animation animation2 = new Animation();
+        animation2.title = "Inside Out";
+        animation2.year = 2015;
+        Action action1 = new Action();
+        action1.title = "Spectre";
+        action1.year = 2015;
+        Action action2 = new Action();
+        action2.title = "Skyfall";
+        action2.year = 2012;
+        Comedy comedy1 = new Comedy();
+        comedy1.title = "Get Hard";
+        comedy1.year = 2015;
+
+        // add movies to library
+        MovieLibrary movieLibrary = new MovieLibrary();
+        movieLibrary.addMovies(scienceFiction1);
+        movieLibrary.addMovies(scienceFiction2);
+        System.out.println(movieLibrary.scienceFictions);
+        movieLibrary.addMovies(animation1);
+        movieLibrary.addMovies(animation2);
+        System.out.println(movieLibrary.animations);
+        movieLibrary.addMovies(action1);
+        movieLibrary.addMovies(action2);
+        System.out.println(movieLibrary.actions);
+        movieLibrary.addMovies(comedy1);
+        System.out.println(movieLibrary.comedies);
+
+        for (ScienceFiction movie : movieLibrary.scienceFictions) {
+            System.out.println("movie type: " + movie.title);
+            System.out.println("year: " + movie.year);
+            System.out.println("------------");
+        }
+        for (Animation movie : movieLibrary.animations) {
+            System.out.println("movie type: " + movie.title);
+            System.out.println("year: " + movie.year);
+            System.out.println("------------");
+        }
+        for (Action movie : movieLibrary.actions) {
+            System.out.println("movie type: " + movie.title);
+            System.out.println("year: " + movie.year);
+            System.out.println("------------");
+        }
+        for (Comedy movie : movieLibrary.comedies) {
+            System.out.println("movie type: " + movie.title);
+            System.out.println("year: " + movie.year);
+            System.out.println("------------");
+        }
     }
 
 }
